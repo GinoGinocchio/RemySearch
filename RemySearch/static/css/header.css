@@ -1,0 +1,19 @@
+.navbar {
+    background-color:#bf0909;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    top:0;
+    width: 100%;
+  }
+.navbar-list {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.navbar-item a
+{
+    color: aliceblue;
+}

@@ -1,0 +1,44 @@
+footer
+{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    background-color: dimgray;
+    color:whitesmoke;
+    margin-top: auto;
+}
+.footer-content
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-content h5
+{
+    font-size: medium;  
+    white-space: initial;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+.footer-content h4
+{
+    font-size: large;
+    font-weight: bolder;
+}
+.footer-left
+{
+    width: 250px;
+    text-align: justify;
+    color:whitesmoke;
+}
+.footer-left h5
+{
+    font-style: italic;
+}
+.footer-right
+{
+    width: 250px;
+    text-align: justify;
+    color: whitesmoke;
+}
