@@ -1,7 +1,8 @@
-.content
+#homecontainer
 {
-    background-color: #FFF4E0;
-    padding-left: 15px;
+    background-color: #FFBF9B;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     min-height: 70vh;
@@ -9,3 +10,31 @@
     margin-top: auto;
 }
 
+#homebox .row
+{
+    border-radius: 3rem;
+    background-color: #FFF4E0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#homebox .row h5
+{
+    padding-top: 15px;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#homebox .row h4
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

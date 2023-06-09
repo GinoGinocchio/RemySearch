@@ -5,9 +5,10 @@
     {% block title %}  {% endblock %}
 </title>
 {%load static%}
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+    {% block link %} {% endblock %}
 </head>
 <body>  
     {% include 'Search/header.html' %}
@@ -16,4 +17,5 @@
   {% include 'Search/footer.html' %}
 </body>
 <script src="{% static 'bootstrap/bootstrap.bundle.min.js' %}"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </html>

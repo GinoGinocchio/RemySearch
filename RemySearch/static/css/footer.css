@@ -13,6 +13,10 @@ footer
 }
 .footer-content
 {
+    padding-top: 25px;
+    padding-top: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -30,7 +34,9 @@ footer
 }
 .footer-left,.footer-right
 {
-    width: 250px;
+    width: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-align: justify;
     color:white;
 }

@@ -1,22 +1,10 @@
-.navbar {
-    background-color:#B46060;
-    height: 75px;
-    margin: 0;
-    padding: 0;
-    top:0;
-    width: 100%;
-  }
 #navbarSupportedContent {
     height: 75px;
     align-items: center;
     list-style: none;
     justify-content: space-evenly;
 }
-.navbar-item a
-{
-    color: #FFF4E0;
-}
-nav
+#navibar
 {
     background-color:#B46060;
     height: 75px;
@@ -25,8 +13,16 @@ nav
     top:0;
     width: 100%;
 }
-.navbar-brand
+#logo
 {
-    color: white;
-    padding-left: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:white;
+}
+#navcontainer
+{
+    padding-left: 15px;
+    padding-right: 15px;
 }

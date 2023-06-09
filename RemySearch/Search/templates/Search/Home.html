@@ -1,21 +1,31 @@
 
 {% extends 'Search/base.html' %}
+{% load static %}
 {% block title %} Inicio {% endblock %}
+{% block link %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
 {% block content %}
-{%load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
-<div class="content">
-    <h3>MINCETUR</h3>
-    <h4>¿Qué hacemos?</h4>
-    <h5>Nos encargamos de definir, dirigir, coordinar, ejecutar y supervisar las políticas de comercio exterior, con excepción de la regulación arancelaria, y de turismo en el país, como órgano rector del sector.</h5>
-    <h5>Para ello, trabajamos en concordancia con la Política General del Estado y en coordinación con los sectores e instituciones vinculados a su ámbito. En cuanto al turismo, tomamos en cuenta su carácter multisectorial e interdependiente, así como los componentes sociales y culturales de las actividades de su competencia.</h5>
-    <h5>Fomentamos los valores de compromiso, probidad, transparencia, justicia y lealtad, y velamos por el cumplimento de la política de calidad en la entidad.</h5>
-    <h4>Visión:</h4>
-    <h5>Siguiendo el Plan Estratégico Sectorial Multianual (Pesem) 2016-2025, apuntamos a ser un país exportador de una oferta de bienes y servicios con valor agregado, competitivo, diversificado y consolidado en los mercados internacionales.</h5>
-    <h5>Además, buscamos ser un país reconocido internacionalmente como destino turístico sostenible, donde el comercio exterior y el turismo contribuyan a la inclusión social y a mejorar los niveles de vida de la población.</h5>
-    <h4>Misión:</h4>
-    <h5>Como parte de nuestros objetivos estratégicos institucionales, buscamos promover la internacionalización de la empresa y la diversificación de los mercados de destino; el desarrollo de la competitividad y sostenibilidad de la oferta exportable; la optimización de la facilitación del comercio exterior; y la eficiencia de la cadena logística internacional.</h5>
-    <h5>También generamos capacidades para la internacionalización y consolidación de una cultura exportadora; promocionamos el desarrollo de una oferta sostenible del sector turismo, así como la conectividad y las inversiones; creamos y consolidamos capacidades institucionales para la actividad turística; y fortalecemos la gestión institucional.</h5>
-    <h5>El detalle de las funciones del Mincetur se encuentra en la Ley N° 27790.</h5>   
+<div class="container-fluid" id="homecontainer">
+    <div class="d-flex" id="homebox">
+        <div class="row">
+            <h4>¿Qué hacemos?</h4>
+            <h5>Nos encargamos de definir, dirigir, coordinar, ejecutar y supervisar las políticas de comercio exterior, con excepción de la regulación arancelaria, y de turismo en el país, como órgano rector del sector. <br><br>
+            Para ello, trabajamos en concordancia con la Política General del Estado y en coordinación con los sectores e instituciones vinculados a su ámbito. En cuanto al turismo, tomamos en cuenta su carácter multisectorial e interdependiente, así como los componentes sociales y culturales de las actividades de su competencia. <br><br>
+            Fomentamos los valores de compromiso, probidad, transparencia, justicia y lealtad, y velamos por el cumplimento de la política de calidad en la entidad.</h5>
+        </div>
+        <div class= "row" >
+            <h4>Visión</h4>
+            <h5>Siguiendo el Plan Estratégico Sectorial Multianual (Pesem) 2016-2025, apuntamos a ser un país exportador de una oferta de bienes y servicios con valor agregado, competitivo, diversificado y consolidado en los mercados internacionales. <br><br>
+            Además, buscamos ser un país reconocido internacionalmente como destino turístico sostenible, donde el comercio exterior y el turismo contribuyan a la inclusión social y a mejorar los niveles de vida de la población.</h5>
+        </div>
+        <div class="row">    
+            <h4>Misión</h4>
+            <h5>Como parte de nuestros objetivos estratégicos institucionales, buscamos promover la internacionalización de la empresa y la diversificación de los mercados de destino; el desarrollo de la competitividad y sostenibilidad de la oferta exportable; la optimización de la facilitación del comercio exterior; y la eficiencia de la cadena logística internacional. <br><br>
+            También generamos capacidades para la internacionalización y consolidación de una cultura exportadora; promocionamos el desarrollo de una oferta sostenible del sector turismo, así como la conectividad y las inversiones; creamos y consolidamos capacidades institucionales para la actividad turística; y fortalecemos la gestión institucional. <br><br>
+            El detalle de las funciones del Mincetur se encuentra en la Ley N° 27790.</h5>   
+        </div>
+    </div>   
 </div>
 {% endblock %}
