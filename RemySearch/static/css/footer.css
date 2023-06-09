@@ -5,9 +5,11 @@ footer
     right: 0;
     width: 100%;
     align-items: center;
-    background-color: dimgray;
-    color:whitesmoke;
+    background-color: #4D4D4D;
+    padding-top: 30px;
     margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 30px;
 }
 .footer-content
 {
@@ -26,19 +28,13 @@ footer
     font-size: large;
     font-weight: bolder;
 }
-.footer-left
+.footer-left,.footer-right
 {
     width: 250px;
     text-align: justify;
-    color:whitesmoke;
+    color:white;
 }
 .footer-left h5
 {
     font-style: italic;
-}
-.footer-right
-{
-    width: 250px;
-    text-align: justify;
-    color: whitesmoke;
 }

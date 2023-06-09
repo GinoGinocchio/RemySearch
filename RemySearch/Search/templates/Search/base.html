@@ -7,13 +7,13 @@
 {%load static%}
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/bootstrap.min.css' %}">
 </head>
 <body>  
     {% include 'Search/header.html' %}
-  <div class="content">
     {% block content %}
     {% endblock %}
-  </div>
   {% include 'Search/footer.html' %}
 </body>
+<script src="{% static 'bootstrap/bootstrap.bundle.min.js' %}"></script>
 </html>

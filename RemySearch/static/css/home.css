@@ -1,7 +1,11 @@
-div
+.content
 {
-    background-color: white;
-    margin-left: 10px;
-    padding-left: 10px;
+    background-color: #FFF4E0;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 70vh;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 

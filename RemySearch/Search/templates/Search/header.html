@@ -1,14 +1,11 @@
 {%load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
-<nav class="navbar">
-    <ul class="navbar-list">
-      <li class="navbar-item"><a href="#">Inicio</a></li>
-      <li class="navbar-item"><a href="#">Acerca</a></li>
-      <li class="navbar-item"><a href="#">Servicios</a></li>
-      <li class="navbar-item"><a href="#">Contacto</a></li>
-      <form class="search-form" action="#" method="GET">
-        <input type="text" name="search" placeholder="Buscar">
-        <button type="submit">Buscar</button>
-      </form>
-    </ul>
-  </nav>
+<nav class="navbar navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success bg-light" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

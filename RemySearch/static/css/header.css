@@ -1,13 +1,12 @@
 .navbar {
-    background-color:#bf0909;
+    background-color:#B46060;
     height: 75px;
     margin: 0;
     padding: 0;
     top:0;
     width: 100%;
   }
-.navbar-list {
-    display: flex;
+#navbarSupportedContent {
     height: 75px;
     align-items: center;
     list-style: none;
@@ -15,5 +14,19 @@
 }
 .navbar-item a
 {
-    color: aliceblue;
+    color: #FFF4E0;
+}
+nav
+{
+    background-color:#B46060;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    top:0;
+    width: 100%;
+}
+.navbar-brand
+{
+    color: white;
+    padding-left: 20px;
 }
