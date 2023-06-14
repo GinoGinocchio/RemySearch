@@ -9,11 +9,13 @@
     background-color:#B46060;
     height: 75px;
     margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
     top:0;
     width: 100%;
 }
-#logo
+#logo, .nav-link
 {
     font-weight: bolder;
     text-align: center;
