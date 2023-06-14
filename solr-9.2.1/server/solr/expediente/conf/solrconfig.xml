@@ -90,8 +90,8 @@
        configuration.
     -->
   <dataDir>${solr.data.dir:}</dataDir>
-  
-  <lib dir="D:/PROYECTO_SOLR/D:\PROYECTO_SOLR\tika" regex="tika-app-.*\.jar" />
+
+
   <!-- The DirectoryFactory to use for indexes.
 
        solr.StandardDirectoryFactory is filesystem
@@ -734,12 +734,6 @@
     </lst>
   </requestHandler>
 
-  <requestHandler name="/update/extract" class="solr.extraction.ExtractingRequestHandler">
-    <lst name="defaults">
-      <str name="fmap.attachment">attr_content</str>
-    </lst>
-  </requestHandler>
-
   <!-- Shared parameters for multiple Request Handlers -->
   <initParams path="/update/**,/query,/select,/spell">
     <lst name="defaults">
@@ -942,8 +936,6 @@
     </highlighting>
   </searchComponent>
 
-
-
   <!-- Update Request Processors
        https://solr.apache.org/guide/solr/latest/configuration-guide/update-request-processors.html
 
@@ -987,13 +979,6 @@
       <str>EEE MMM ppd HH:mm:ss [z ]yyyy</str>
     </arr>
   </updateProcessor>
-    <updateRequestProcessorChain name="tika-extract">
-    <processor class="solr.TikaEntityProcessorFactory">
-      <lst name="application">application/pdf</lst>
-      <lst name="fieldRegex">.*</lst>
-    </processor>
-  </updateRequestProcessorChain>
-
   <updateProcessor class="solr.AddSchemaFieldsUpdateProcessorFactory" name="add-schema-fields">
     <lst name="typeMapping">
       <str name="valueClass">java.lang.String</str>

@@ -1,0 +1,75 @@
+2023-05-17 19:16:00.603 INFO  (main) [] o.e.j.s.Server jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 17.0.7+8-LTS-224
+2023-05-17 19:16:01.170 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2023-05-17 19:16:01.193 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-05-17 19:16:01.198 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.2.1
+2023-05-17 19:16:01.198 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-05-17 19:16:01.198 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1
+2023-05-17 19:16:01.198 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-05-17T19:16:01.198834900Z
+2023-05-17 19:16:01.202 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\logs\jvm_crash_40036.log
+2023-05-17 19:16:01.206 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr (source: system property: solr.solr.home)
+2023-05-17 19:16:01.208 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\solr.xml
+2023-05-17 19:16:01.270 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/lib]
+2023-05-17 19:16:02.116 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2023-05-17 19:16:02.118 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-05-17 19:16:02.288 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr
+2023-05-17 19:16:02.288 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [expediente]
+2023-05-17 19:16:02.318 ERROR (coreContainerWorkExecutor-2-thread-1) [] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [expediente]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [expediente]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:1044) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:212) ~[metrics-core-4.2.17.jar:4.2.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:289) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [expediente]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1689) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core expediente: Error loading solr config from D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente\conf\solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:263) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente\conf\solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:165) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
+	... 5 more
+Caused by: java.nio.file.InvalidPathException: Illegal char <:> at index 18: D:/PROYECTO_SOLR/D:\PROYECTO_SOLR\tika
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.resolve(Path.java:515) ~[?:?]
+	at org.apache.solr.core.SolrConfig.initLibs(SolrConfig.java:980) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:247) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
+	... 5 more
+2023-05-17 19:16:02.669 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2023-05-17 19:16:03.464 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1e11bc55{solr-jetty-context.xml,/solr,file:///D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/server/solr-webapp/webapp/,AVAILABLE}{D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server/solr-webapp/webapp}
+2023-05-17 19:16:03.471 INFO  (main) [] o.e.j.s.RequestLogWriter Opened D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\logs\2023_05_17.request.log
+2023-05-17 19:16:03.480 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@28d6290{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-05-17 19:16:03.481 INFO  (main) [] o.e.j.s.Server Started Server@2a65bb85{STARTING}[10.0.13,sto=0] @4039ms
+2023-05-17 19:16:04.705 INFO  (qtp229995302-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1684350964650} status=0 QTime=22
+2023-05-17 19:16:04.717 INFO  (qtp229995302-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1684350964650} status=0 QTime=0
+2023-05-17 19:16:04.849 INFO  (qtp229995302-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1684350964651} status=0 QTime=166
+2023-05-17 19:16:05.506 INFO  (qtp229995302-19) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=130
+2023-05-17 19:16:06.941 INFO  (qtp229995302-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1684350964650} status=0 QTime=0
+2023-05-17 19:16:07.084 INFO  (qtp229995302-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1684350964651} status=0 QTime=144
+2023-05-17 19:16:07.207 INFO  (qtp229995302-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1684350964651} status=0 QTime=119
