@@ -46,6 +46,7 @@
     color: #4D4D4D;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-bottom: 1.5px solid #4D4D4D;
 }
 
 .fila p
@@ -58,6 +59,7 @@
     align-items: center;
     margin-left: 10px;
     margin-left: 10px;
+    font-family: serif;
 }
 
 .fila a:link, .fila a:active, .fila a:visited 
@@ -113,4 +115,14 @@
 {
     color: #28a745;
     background-color: white;
+}
+
+#tablaheader
+{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background-color: #3c373e;
+    color: white;
 }

@@ -14,11 +14,3 @@ def expediente(request):
     context['objetos'] = objetos
     return render (request, 'Search/exp.html', context = context)
 
-def pdf_view(request, pk):
-    archivo_pdf = get_object_or_404(ArchivoPDF, pk=pk)
-    pdf_path = os.path.join(settings.MEDIA_ROOT, archivo_pdf.archivo.name)
-
-    with open(pdf_path, 'rb') as pdf_file:
-        response = HttpResponse(pdf_file.read(), content_type='application/pdf')
-        response['Content-Disposition'] = f'inline; filename="{archivo_pdf.archivo.name}"'
-        return response
