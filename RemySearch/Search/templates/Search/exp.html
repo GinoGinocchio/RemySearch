@@ -15,7 +15,16 @@
                   </form>
             </div>
             <div class="row" id = "datos">
-                
+                <div class= "fila">
+                    <P>#Expediente</P>
+                    <p>Archivo</p>
+                </div>
+                {% for p in objetos %}
+                <div class= "fila ">
+                    <P>{{p.id}}</P>
+                    <a href="{{p.archivo.url}}">Holo</a>
+                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

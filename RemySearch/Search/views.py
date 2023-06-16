@@ -9,7 +9,10 @@ def home(request):
     return render (request, 'Search/Home.html')
 
 def expediente(request):
-    return render (request,'Search/exp.html')
+    context = {}
+    objetos = ArchivoPDF.objects.all()
+    context['objetos'] = objetos
+    return render (request, 'Search/exp.html', context = context)
 
 def pdf_view(request, pk):
     archivo_pdf = get_object_or_404(ArchivoPDF, pk=pk)
