@@ -51,8 +51,9 @@ HAYSTACK_CONNECTIONS = {
 }
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
-SOLR_SERVER = 'http://localhost:8983/solr/'
+SOLR_SERVER = 'http://localhost:8983/solr/mincetur'
 SOLR_CONNECTION = pysolr.Solr(SOLR_SERVER)
+SOLR_CORE = 'mincetur'
 
 
 MIDDLEWARE = [
