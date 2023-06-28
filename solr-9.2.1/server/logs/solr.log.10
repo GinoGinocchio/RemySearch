@@ -1,84 +1,41 @@
-2023-06-27 04:15:35.698 INFO  (main) [] o.e.j.s.Server jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 17.0.7+8-LTS-224
-2023-06-27 04:15:36.281 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
-2023-06-27 04:15:36.300 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2023-06-27 04:15:36.305 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.2.1
-2023-06-27 04:15:36.306 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2023-06-27 04:15:36.306 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1
-2023-06-27 04:15:36.306 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-06-27T04:15:36.306519800Z
-2023-06-27 04:15:36.308 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\logs\jvm_crash_20036.log
-2023-06-27 04:15:36.312 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr (source: system property: solr.solr.home)
-2023-06-27 04:15:36.313 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\solr.xml
-2023-06-27 04:15:36.367 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/lib]
-2023-06-27 04:15:37.244 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2023-06-27 04:15:37.245 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2023-06-27 04:15:37.414 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr
-2023-06-27 04:15:37.415 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [expediente, mincetur]
-2023-06-27 04:15:37.452 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
-2023-06-27 04:15:37.452 INFO  (coreLoadExecutor-10-thread-2) [ x:mincetur] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
-2023-06-27 04:15:37.514 ERROR (coreLoadExecutor-10-thread-2) [ x:mincetur] o.a.s.c.XmlConfigFile Exception during parsing file: schema => org.xml.sax.SAXParseException; systemId: solrres:/managed-schema.xml; lineNumber: 1077; columnNumber: 3; The element type "fieldType" must be terminated by the matching end-tag "</fieldType>".
-	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
-org.xml.sax.SAXParseException: The element type "fieldType" must be terminated by the matching end-tag "</fieldType>".
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1695) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542) ~[?:?]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889) ~[?:?]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
-	at org.apache.solr.util.SafeXMLParsing.parseConfigXML(SafeXMLParsing.java:72) ~[?:?]
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:136) ~[?:?]
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:77) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getParsedSchema(IndexSchemaFactory.java:199) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.loadConfig(IndexSchemaFactory.java:141) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.lambda$getConfigResource$1(IndexSchemaFactory.java:133) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:190) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.lambda$getConfigResource$2(IndexSchemaFactory.java:124) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:508) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:188) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:119) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:287) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:54) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:342) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.lambda$loadConfigSet$0(ConfigSetService.java:253) ~[?:?]
-	at org.apache.solr.core.ConfigSet.<init>(ConfigSet.java:49) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:249) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:289) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
-2023-06-27 04:15:37.517 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.IndexSchema Schema name=default-config
-2023-06-27 04:15:37.813 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2023-06-27 04:15:37.813 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.CoreContainer Creating SolrCore 'expediente' using configuration from instancedir C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\expediente, trusted=true
-2023-06-27 04:15:37.856 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\expediente], dataDir=[C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\expediente\data\]
-2023-06-27 04:15:37.872 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2023-06-27 04:15:38.288 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@7544a1e4{solr-jetty-context.xml,/solr,file:///C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server/solr-webapp/webapp}
-2023-06-27 04:15:38.295 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\logs\2023_06_27.request.log
-2023-06-27 04:15:38.301 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2023-06-27 04:15:38.304 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@6ca0256d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2023-06-27 04:15:38.305 INFO  (main) [] o.e.j.s.Server Started Server@4b85880b{STARTING}[10.0.13,sto=0] @3831ms
-2023-06-27 04:15:38.311 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2023-06-27 04:15:38.312 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2023-06-27 04:15:38.320 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2023-06-27 04:15:38.321 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2023-06-27 04:15:38.394 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\expediente\conf
-2023-06-27 04:15:38.408 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
-2023-06-27 04:15:38.418 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2023-06-27 04:15:38.421 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1769827822124138496
-2023-06-27 04:15:38.423 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2023-06-27 04:15:38.423 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2023-06-27 04:15:38.424 ERROR (coreContainerWorkExecutor-2-thread-1) [] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [mincetur]
+2023-06-27 19:55:05.294 INFO  (main) [] o.e.j.s.Server jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 17.0.7+8-LTS-224
+2023-06-27 19:55:05.899 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2023-06-27 19:55:05.943 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-06-27 19:55:05.948 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.2.1
+2023-06-27 19:55:05.949 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-06-27 19:55:05.949 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1
+2023-06-27 19:55:05.949 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-06-27T19:55:05.949094Z
+2023-06-27 19:55:05.951 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\logs\jvm_crash_126808.log
+2023-06-27 19:55:05.955 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr (source: system property: solr.solr.home)
+2023-06-27 19:55:05.957 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\solr.xml
+2023-06-27 19:55:06.037 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/lib]
+2023-06-27 19:55:07.149 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2023-06-27 19:55:07.150 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-06-27 19:55:07.375 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr
+2023-06-27 19:55:07.376 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [expediente, mincetur]
+2023-06-27 19:55:07.419 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
+2023-06-27 19:55:07.439 INFO  (coreLoadExecutor-10-thread-2) [ x:mincetur] o.a.s.c.SolrResourceLoader Added 88 libs to classloader, from paths: [/D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/modules/clustering/lib, /D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/modules/extraction/lib, /D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/modules/langid/lib, /D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/modules/ltr/lib, /D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/modules/scripting/lib]
+2023-06-27 19:55:07.523 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.IndexSchema Schema name=default-config
+2023-06-27 19:55:07.557 INFO  (coreLoadExecutor-10-thread-2) [ x:mincetur] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
+2023-06-27 19:55:07.558 INFO  (coreLoadExecutor-10-thread-2) [ x:mincetur] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2023-06-27 19:55:07.580 INFO  (coreLoadExecutor-10-thread-2) [ x:mincetur] o.a.s.s.IndexSchema Schema name=mincetur
+2023-06-27 19:55:07.589 WARN  (coreLoadExecutor-10-thread-2) [ x:mincetur] o.a.s.D.s.TrieDateField Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2023-06-27 19:55:07.827 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2023-06-27 19:55:07.871 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-06-27 19:55:07.871 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.CoreContainer Creating SolrCore 'expediente' using configuration from instancedir D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente, trusted=true
+2023-06-27 19:55:07.922 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.SolrCore Opening new SolrCore at [D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente], dataDir=[D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente\data\]
+2023-06-27 19:55:08.465 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2023-06-27 19:55:08.475 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-06-27 19:55:08.475 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-06-27 19:55:08.483 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-06-27 19:55:08.483 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-06-27 19:55:08.602 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente\conf
+2023-06-27 19:55:08.616 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4}
+2023-06-27 19:55:08.626 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-06-27 19:55:08.630 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1769886930572410880
+2023-06-27 19:55:08.633 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-06-27 19:55:08.633 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-06-27 19:55:08.634 ERROR (coreContainerWorkExecutor-2-thread-1) [] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [mincetur]
 	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
 java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [mincetur]
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
@@ -113,7 +70,7 @@ Caused by: org.apache.solr.common.SolrException: Error loading parsing schema
 	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
 	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
 	... 5 more
-Caused by: org.apache.solr.common.SolrException: Can't load schema C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur\conf\managed-schema.xml: Error fetching schema
+Caused by: org.apache.solr.common.SolrException: Can't load schema D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\mincetur\conf\managed-schema.xml: Plugin init failure for [schema.xml] fieldType "pdate": FieldType: TrieDateField (pdate) does not support specifying an analyzer
 	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:659) ~[?:?]
 	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:188) ~[?:?]
 	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:119) ~[?:?]
@@ -127,12 +84,9 @@ Caused by: org.apache.solr.common.SolrException: Can't load schema C:\Users\USER
 	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
 	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
 	... 5 more
-Caused by: org.apache.solr.common.SolrException: Error fetching schema
-	at org.apache.solr.schema.IndexSchemaFactory.loadConfig(IndexSchemaFactory.java:148) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.lambda$getConfigResource$1(IndexSchemaFactory.java:133) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:190) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.lambda$getConfigResource$2(IndexSchemaFactory.java:124) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:508) ~[?:?]
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] fieldType "pdate": FieldType: TrieDateField (pdate) does not support specifying an analyzer
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:179) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:533) ~[?:?]
 	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:188) ~[?:?]
 	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:119) ~[?:?]
 	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:287) ~[?:?]
@@ -145,15 +99,12 @@ Caused by: org.apache.solr.common.SolrException: Error fetching schema
 	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
 	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
 	... 5 more
-Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema.xml; lineNumber: 1077; columnNumber: 3; The element type "fieldType" must be terminated by the matching end-tag "</fieldType>".
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:142) ~[?:?]
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:77) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getParsedSchema(IndexSchemaFactory.java:199) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.loadConfig(IndexSchemaFactory.java:141) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.lambda$getConfigResource$1(IndexSchemaFactory.java:133) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:190) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.lambda$getConfigResource$2(IndexSchemaFactory.java:124) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:508) ~[?:?]
+Caused by: org.apache.solr.common.SolrException: FieldType: TrieDateField (pdate) does not support specifying an analyzer
+	at org.apache.solr.schema.FieldType.setIndexAnalyzer(FieldType.java:596) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:126) ~[?:?]
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:43) ~[?:?]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:144) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:533) ~[?:?]
 	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:188) ~[?:?]
 	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:119) ~[?:?]
 	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:287) ~[?:?]
@@ -166,419 +117,28 @@ Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; 
 	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
 	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
 	... 5 more
-Caused by: org.xml.sax.SAXParseException: The element type "fieldType" must be terminated by the matching end-tag "</fieldType>".
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
-	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1695) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:?]
-	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542) ~[?:?]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889) ~[?:?]
-	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
-	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
-	at org.apache.solr.util.SafeXMLParsing.parseConfigXML(SafeXMLParsing.java:72) ~[?:?]
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:136) ~[?:?]
-	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:77) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getParsedSchema(IndexSchemaFactory.java:199) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.loadConfig(IndexSchemaFactory.java:141) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.lambda$getConfigResource$1(IndexSchemaFactory.java:133) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:190) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.lambda$getConfigResource$2(IndexSchemaFactory.java:124) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:508) ~[?:?]
-	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:188) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:119) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:287) ~[?:?]
-	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:54) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:342) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.lambda$loadConfigSet$0(ConfigSetService.java:253) ~[?:?]
-	at org.apache.solr.core.ConfigSet.<init>(ConfigSet.java:49) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:249) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:1015) ~[?:?]
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:234) ~[metrics-core-4.2.17.jar:4.2.17]
-	... 5 more
-2023-06-27 04:15:38.429 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2023-06-27 04:15:39.328 INFO  (qtp883455411-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839339171} status=0 QTime=6
-2023-06-27 04:15:39.354 INFO  (qtp883455411-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839339171} status=0 QTime=6
-2023-06-27 04:15:39.392 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839339171} status=0 QTime=69
-2023-06-27 04:15:40.439 INFO  (qtp883455411-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=33
-2023-06-27 04:17:52.382 INFO  (qtp883455411-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839472323} status=0 QTime=0
-2023-06-27 04:17:52.385 INFO  (qtp883455411-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839472323} status=0 QTime=1
-2023-06-27 04:17:52.422 INFO  (qtp883455411-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839472323} status=0 QTime=39
-2023-06-27 04:18:04.030 INFO  (qtp883455411-21) [ x:MINCETUR] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=MINCETUR&action=CREATE&config=solrconfig.xml&instanceDir=MINCETUR&wt=json&_=1687839472323
-2023-06-27 04:18:04.034 ERROR (qtp883455411-21) [ x:MINCETUR] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Could not create a new core in C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR as another core is already defined there => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Could not create a new core in C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR as another core is already defined there
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1574)
-org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Could not create a new core in C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR as another core is already defined there
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1574) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:111) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:398) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:354) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:219) ~[?:?]
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:224) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:929) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:877) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:548) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:252) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:220) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:215) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:197) ~[?:?]
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578) ~[jetty-security-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1570) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1383) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1543) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1305) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$0(HttpChannel.java:505) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:762) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:497) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:282) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:416) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:385) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:272) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.lambda$new$0(AdaptiveExecutionStrategy.java:140) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:934) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1078) ~[jetty-util-10.0.13.jar:10.0.13]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.common.SolrException: Could not create a new core in C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR as another core is already defined there
-	at org.apache.solr.core.CorePropertiesLocator.create(CorePropertiesLocator.java:67) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1527) ~[?:?]
-	... 54 more
-2023-06-27 04:18:04.034 INFO  (qtp883455411-21) [ x:MINCETUR] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=MINCETUR&action=CREATE&config=solrconfig.xml&instanceDir=MINCETUR&wt=json&_=1687839472323} status=400 QTime=4
-2023-06-27 04:18:21.088 INFO  (qtp883455411-47) [ x:MINCETUR] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=MINCETUR&action=CREATE&config=solrconfig.xml&instanceDir=MINCETUR&wt=json&_=1687839472323
-2023-06-27 04:18:21.091 ERROR (qtp883455411-47) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Unable to create core [MINCETUR] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR' => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Unable to create core [MINCETUR] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR'
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1574)
-org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Unable to create core [MINCETUR] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR'
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1574) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:111) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:398) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:354) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:219) ~[?:?]
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:224) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:929) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:877) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:548) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:252) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:220) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:215) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:197) ~[?:?]
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578) ~[jetty-security-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1570) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1383) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1543) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1305) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$0(HttpChannel.java:505) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:762) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:497) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:282) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:416) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:385) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:272) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.lambda$new$0(AdaptiveExecutionStrategy.java:140) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:934) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1078) ~[jetty-util-10.0.13.jar:10.0.13]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.common.SolrException: Unable to create core [MINCETUR]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1689) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core MINCETUR: Error loading solr config from C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR\conf\solrconfig.xml
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:263) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.common.SolrException: Error loading solr config from C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR\conf\solrconfig.xml
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:165) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.common.SolrException: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR'
-	at org.apache.solr.core.SolrConfig.readXml(SolrConfig.java:411) ~[?:?]
-	at org.apache.solr.core.SolrConfig.lambda$new$1(SolrConfig.java:229) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:190) ~[?:?]
-	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:222) ~[?:?]
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR'
-	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:382) ~[?:?]
-	at org.apache.solr.core.SolrConfig.readXml(SolrConfig.java:404) ~[?:?]
-	at org.apache.solr.core.SolrConfig.lambda$new$1(SolrConfig.java:229) ~[?:?]
-	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:190) ~[?:?]
-	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:222) ~[?:?]
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-2023-06-27 04:18:21.091 INFO  (qtp883455411-47) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=MINCETUR&action=CREATE&config=solrconfig.xml&instanceDir=MINCETUR&wt=json&_=1687839472323} status=400 QTime=3
-2023-06-27 04:18:41.688 INFO  (qtp883455411-21) [ x:MINCETUR] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=MINCETUR&action=CREATE&config=solrconfig.xml&instanceDir=MINCETUR&wt=json&_=1687839472323
-2023-06-27 04:18:41.688 ERROR (qtp883455411-21) [ x:MINCETUR] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Could not create a new core in C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR as another core is already defined there => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Could not create a new core in C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR as another core is already defined there
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1574)
-org.apache.solr.common.SolrException: Error CREATEing SolrCore 'MINCETUR': Could not create a new core in C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR as another core is already defined there
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1574) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:111) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:398) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:354) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:219) ~[?:?]
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:224) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:929) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:877) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:548) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:252) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:220) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:215) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:197) ~[?:?]
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578) ~[jetty-security-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1570) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1383) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1543) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1305) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$0(HttpChannel.java:505) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:762) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:497) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:282) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:416) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:385) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:272) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.lambda$new$0(AdaptiveExecutionStrategy.java:140) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:934) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1078) ~[jetty-util-10.0.13.jar:10.0.13]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.common.SolrException: Could not create a new core in C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR as another core is already defined there
-	at org.apache.solr.core.CorePropertiesLocator.create(CorePropertiesLocator.java:67) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1527) ~[?:?]
-	... 54 more
-2023-06-27 04:18:41.689 INFO  (qtp883455411-21) [ x:MINCETUR] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=MINCETUR&action=CREATE&config=solrconfig.xml&instanceDir=MINCETUR&wt=json&_=1687839472323} status=400 QTime=1
-2023-06-27 04:18:55.336 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=MINCETUR&action=CREATE&config=solrconfig.xml&instanceDir=MINCETUR&wt=json&_=1687839472323
-2023-06-27 04:18:55.345 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
-2023-06-27 04:18:55.355 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.s.IndexSchema Schema name=default-config
-2023-06-27 04:18:55.419 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2023-06-27 04:18:55.419 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.c.CoreContainer Creating SolrCore 'MINCETUR' using configuration from instancedir C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR, trusted=true
-2023-06-27 04:18:55.420 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR], dataDir=[C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR\data\]
-2023-06-27 04:18:55.516 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2023-06-27 04:18:55.518 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2023-06-27 04:18:55.518 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2023-06-27 04:18:55.520 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2023-06-27 04:18:55.520 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2023-06-27 04:18:55.527 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\MINCETUR\conf
-2023-06-27 04:18:55.528 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01}
-2023-06-27 04:18:55.528 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2023-06-27 04:18:55.529 INFO  (qtp883455411-48) [ x:MINCETUR] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1769828028806856704
-2023-06-27 04:18:55.530 INFO  (searcherExecutor-18-thread-1-processing-MINCETUR) [ x:MINCETUR] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2023-06-27 04:18:55.530 INFO  (searcherExecutor-18-thread-1-processing-MINCETUR) [ x:MINCETUR] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2023-06-27 04:18:55.531 INFO  (qtp883455411-48) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=MINCETUR&action=CREATE&config=solrconfig.xml&instanceDir=MINCETUR&wt=json&_=1687839472323} status=0 QTime=194
-2023-06-27 04:18:55.532 INFO  (searcherExecutor-18-thread-1-processing-MINCETUR) [ x:MINCETUR] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2023-06-27 04:18:55.554 INFO  (qtp883455411-47) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839472323} status=0 QTime=0
-2023-06-27 04:18:55.564 INFO  (qtp883455411-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839472323} status=0 QTime=6
-2023-06-27 04:18:55.600 INFO  (qtp883455411-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839472323} status=0 QTime=45
-2023-06-27 04:21:06.878 INFO  (qtp883455411-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839666782} status=0 QTime=0
-2023-06-27 04:21:06.881 INFO  (qtp883455411-55) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839666782} status=0 QTime=4
-2023-06-27 04:21:06.924 INFO  (qtp883455411-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839666782} status=0 QTime=46
-2023-06-27 04:22:36.796 INFO  (qtp883455411-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839756727} status=0 QTime=0
-2023-06-27 04:22:36.801 INFO  (qtp883455411-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839756727} status=0 QTime=3
-2023-06-27 04:22:36.837 INFO  (qtp883455411-55) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839756727} status=0 QTime=39
-2023-06-27 04:22:53.534 INFO  (qtp883455411-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839756727} status=0 QTime=0
-2023-06-27 04:22:53.538 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839756727} status=0 QTime=4
-2023-06-27 04:22:53.572 INFO  (qtp883455411-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839756727} status=0 QTime=38
-2023-06-27 04:22:56.397 INFO  (qtp883455411-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839756727} status=0 QTime=0
-2023-06-27 04:22:56.399 INFO  (qtp883455411-55) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839756727} status=0 QTime=2
-2023-06-27 04:22:56.437 INFO  (qtp883455411-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839756727} status=0 QTime=39
-2023-06-27 04:23:05.621 INFO  (qtp883455411-23) [ x:MINCETUR] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.MINCETUR tag=null
-2023-06-27 04:23:05.637 INFO  (qtp883455411-23) [ x:MINCETUR] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@7d64aece MINCETUR
-2023-06-27 04:23:05.637 INFO  (qtp883455411-23) [ x:MINCETUR] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.MINCETUR tag=SolrCore@7d64aece
-2023-06-27 04:23:05.639 INFO  (qtp883455411-23) [ x:MINCETUR] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2023-06-27 04:23:05.641 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=MINCETUR&action=UNLOAD&wt=json&_=1687839756727} status=0 QTime=21
-2023-06-27 04:23:05.659 INFO  (qtp883455411-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839756727} status=0 QTime=0
-2023-06-27 04:23:05.661 INFO  (qtp883455411-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839756727} status=0 QTime=2
-2023-06-27 04:23:05.682 INFO  (qtp883455411-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839756727} status=0 QTime=0
-2023-06-27 04:23:05.684 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839756727} status=0 QTime=2
-2023-06-27 04:23:05.707 INFO  (qtp883455411-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839756727} status=0 QTime=48
-2023-06-27 04:23:05.741 INFO  (qtp883455411-55) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839756727} status=0 QTime=31
-2023-06-27 04:23:30.819 INFO  (qtp883455411-55) [ x:mincetur] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=mincetur&action=CREATE&config=solrconfig.xml&instanceDir=mincetur&wt=json&_=1687839756727
-2023-06-27 04:23:30.825 ERROR (qtp883455411-55) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'mincetur': Unable to create core [mincetur] Caused by: Missing: luceneMatchVersion => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'mincetur': Unable to create core [mincetur] Caused by: Missing: luceneMatchVersion
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1574)
-org.apache.solr.common.SolrException: Error CREATEing SolrCore 'mincetur': Unable to create core [mincetur] Caused by: Missing: luceneMatchVersion
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1574) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:111) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:398) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:354) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:219) ~[?:?]
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:224) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:929) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:877) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:548) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:252) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:220) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:215) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:197) ~[?:?]
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578) ~[jetty-security-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1570) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1383) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1543) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1305) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$0(HttpChannel.java:505) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:762) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:497) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:282) ~[jetty-server-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:416) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:385) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:272) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.lambda$new$0(AdaptiveExecutionStrategy.java:140) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:934) ~[jetty-util-10.0.13.jar:10.0.13]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1078) ~[jetty-util-10.0.13.jar:10.0.13]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.common.SolrException: Unable to create core [mincetur]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1689) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core mincetur: Error loading solr config from C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur\conf\solrconfig.xml
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:263) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.common.SolrException: Error loading solr config from C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur\conf\solrconfig.xml
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:165) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-Caused by: java.lang.RuntimeException: Missing: luceneMatchVersion
-	at org.apache.solr.core.SolrConfig.lambda$new$3(SolrConfig.java:251) ~[?:?]
-	at org.apache.solr.common.ConfigNode.child(ConfigNode.java:77) ~[?:?]
-	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:249) ~[?:?]
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1656) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1532) ~[?:?]
-	... 54 more
-2023-06-27 04:23:30.825 INFO  (qtp883455411-55) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=mincetur&action=CREATE&config=solrconfig.xml&instanceDir=mincetur&wt=json&_=1687839756727} status=400 QTime=6
-2023-06-27 04:24:21.607 INFO  (qtp883455411-55) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687839861528} status=0 QTime=0
-2023-06-27 04:24:21.609 INFO  (qtp883455411-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687839861528} status=0 QTime=1
-2023-06-27 04:24:21.648 INFO  (qtp883455411-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687839861528} status=0 QTime=41
-2023-06-27 04:25:11.429 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@4b85880b{STOPPING}[10.0.13,sto=0]
-2023-06-27 04:25:11.430 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@6ca0256d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2023-06-27 04:25:11.436 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=849063257
-2023-06-27 04:25:11.437 INFO  (coreCloseExecutor-24-thread-1) [ x:expediente] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@640bca1c expediente
-2023-06-27 04:25:11.437 INFO  (coreCloseExecutor-24-thread-1) [ x:expediente] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.expediente tag=SolrCore@640bca1c
-2023-06-27 04:25:11.447 INFO  (coreCloseExecutor-24-thread-1) [ x:expediente] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2023-06-27 04:25:11.450 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2023-06-27 04:25:11.457 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2023-06-27 04:25:11.460 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2023-06-27 04:25:11.466 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@7544a1e4{solr-jetty-context.xml,/solr,null,STOPPED}{C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server/solr-webapp/webapp}
+2023-06-27 19:55:08.643 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-06-27 19:55:08.931 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1e11bc55{solr-jetty-context.xml,/solr,file:///D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/server/solr-webapp/webapp/,AVAILABLE}{D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server/solr-webapp/webapp}
+2023-06-27 19:55:08.937 INFO  (main) [] o.e.j.s.RequestLogWriter Opened D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\logs\2023_06_27.request.log
+2023-06-27 19:55:08.947 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@28d6290{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-06-27 19:55:08.948 INFO  (main) [] o.e.j.s.Server Started Server@2a65bb85{STARTING}[10.0.13,sto=0] @4949ms
+2023-06-27 19:55:10.275 INFO  (qtp229995302-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=209
+2023-06-27 19:55:17.218 INFO  (qtp229995302-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687895717177} status=0 QTime=2
+2023-06-27 19:55:17.448 INFO  (qtp229995302-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687895717177} status=0 QTime=231
+2023-06-27 19:55:17.642 INFO  (qtp229995302-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687895717177} status=0 QTime=189
+2023-06-27 19:55:26.865 INFO  (qtp229995302-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687895717177} status=0 QTime=0
+2023-06-27 19:55:26.871 INFO  (qtp229995302-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687895717177} status=0 QTime=3
+2023-06-27 19:55:26.925 INFO  (qtp229995302-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687895717177} status=0 QTime=0
+2023-06-27 19:55:26.929 INFO  (qtp229995302-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687895717177} status=0 QTime=1
+2023-06-27 19:55:27.123 INFO  (qtp229995302-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687895717177} status=0 QTime=254
+2023-06-27 19:55:27.315 INFO  (qtp229995302-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687895717177} status=0 QTime=189
+2023-06-27 19:58:09.413 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@2a65bb85{STOPPING}[10.0.13,sto=0]
+2023-06-27 19:58:09.415 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@28d6290{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-06-27 19:58:09.435 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=745604825
+2023-06-27 19:58:09.437 INFO  (coreCloseExecutor-18-thread-1) [ x:expediente] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@2bd3526a expediente
+2023-06-27 19:58:09.437 INFO  (coreCloseExecutor-18-thread-1) [ x:expediente] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.expediente tag=SolrCore@2bd3526a
+2023-06-27 19:58:09.468 INFO  (coreCloseExecutor-18-thread-1) [ x:expediente] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-06-27 19:58:09.476 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2023-06-27 19:58:09.491 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2023-06-27 19:58:09.502 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2023-06-27 19:58:09.508 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1e11bc55{solr-jetty-context.xml,/solr,null,STOPPED}{D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server/solr-webapp/webapp}

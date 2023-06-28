@@ -1,11 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.shortcuts import get_object_or_404
 from django.conf import settings
 from Search.models import *
-import os
-# import pysolr
-# from tika import parser
+from .forms import BusquedaForm
+import pysolr
+
 
 def home(request):
     return render (request, 'Search/Home.html')
@@ -16,17 +14,24 @@ def expediente(request):
     context['objetos'] = objetos
     return render (request, 'Search/exp.html', context = context)
 
-# def index_pdf_to_solr(pdf_path, document_id):
-#     solr = pysolr.Solr(os.environ['SOLR_SERVER'])
+def buscar_documentos(palabra_clave):
+    solr = pysolr.Solr(settings.SOLR_SERVER)
+    query = f'content:*{palabra_clave}* OR id:*{palabra_clave}*'
+    resultados = solr.search(query, sort='score desc',fl='id')
+    return resultados
 
-#     # Extraer el contenido del PDF utilizando Tika
-#     parsed_pdf = parser.from_file(pdf_path)
-#     content = parsed_pdf['content']
-
-#     # Preparar los datos para enviar a Solr
-#     doc = {
-#         'id': document_id,
-#         'content': content
-#         # Agrega otros campos según tu esquema de Solr
-#     }
-
+def buscar(request):
+    if request.method == 'POST':
+        form = BusquedaForm(request.POST)
+        if form.is_valid():
+            palabra_clave = form.cleaned_data['palabra_clave']
+            resultados_solr = buscar_documentos(palabra_clave)
+            ids = [int(result['id']) for result in resultados_solr]
+            resultados_modelo = ArchivoPDF.objects.in_bulk(ids)
+            objetos_ordenados = [resultados_modelo[id] for id in ids if id in resultados_modelo]
+            return render(request, 'Search/exp.html', {'resultados': objetos_ordenados, 'form': form})
+    else:
+        form = BusquedaForm()
+        resultados_modelo = ArchivoPDF.objects.all()
+        return render(request, 'Search/exp.html', {'resultados': resultados_modelo, 'form': form})
+    

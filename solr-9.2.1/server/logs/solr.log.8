@@ -1,53 +1,141 @@
-2023-06-14 19:52:53.573 INFO  (main) [] o.e.j.s.Server jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 17.0.7+8-LTS-224
-2023-06-14 19:52:54.828 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
-2023-06-14 19:52:54.877 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2023-06-14 19:52:54.882 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.2.1
-2023-06-14 19:52:54.882 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2023-06-14 19:52:54.882 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1
-2023-06-14 19:52:54.882 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-06-14T19:52:54.882498500Z
-2023-06-14 19:52:54.885 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\logs\jvm_crash_32028.log
-2023-06-14 19:52:54.892 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr (source: system property: solr.solr.home)
-2023-06-14 19:52:54.914 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\solr.xml
-2023-06-14 19:52:54.996 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/lib]
-2023-06-14 19:52:56.034 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2023-06-14 19:52:56.037 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2023-06-14 19:52:56.267 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr
-2023-06-14 19:52:56.267 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [expediente]
-2023-06-14 19:52:56.307 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
-2023-06-14 19:52:56.481 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.IndexSchema Schema name=default-config
-2023-06-14 19:52:56.761 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2023-06-14 19:52:56.998 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2023-06-14 19:52:56.998 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.CoreContainer Creating SolrCore 'expediente' using configuration from instancedir D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente, trusted=true
-2023-06-14 19:52:57.033 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.SolrCore Opening new SolrCore at [D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente], dataDir=[D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente\data\]
-2023-06-14 19:52:57.655 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
-2023-06-14 19:52:57.669 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2023-06-14 19:52:57.670 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2023-06-14 19:52:57.683 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2023-06-14 19:52:57.684 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2023-06-14 19:52:57.852 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\solr\expediente\conf
-2023-06-14 19:52:57.871 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
-2023-06-14 19:52:57.882 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2023-06-14 19:52:57.886 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1768709032914190336
-2023-06-14 19:52:57.889 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2023-06-14 19:52:57.889 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2023-06-14 19:52:57.896 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2023-06-14 19:52:57.947 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@24f43aa3{solr-jetty-context.xml,/solr,file:///D:/PROYECTO_SOLR/RemySearch/solr-9.2.1/server/solr-webapp/webapp/,AVAILABLE}{D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server/solr-webapp/webapp}
-2023-06-14 19:52:57.953 INFO  (main) [] o.e.j.s.RequestLogWriter Opened D:\PROYECTO_SOLR\RemySearch\solr-9.2.1\server\logs\2023_06_14.request.log
-2023-06-14 19:52:57.968 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@28d6290{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2023-06-14 19:52:57.969 INFO  (main) [] o.e.j.s.Server Started Server@2a65bb85{STARTING}[10.0.13,sto=0] @9118ms
-2023-06-14 19:52:58.092 INFO  (qtp229995302-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=58
-2023-06-14 19:53:02.145 INFO  (qtp229995302-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1686772382084} status=0 QTime=4
-2023-06-14 19:53:02.212 INFO  (qtp229995302-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1686772382084} status=0 QTime=70
-2023-06-14 19:53:02.250 INFO  (qtp229995302-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1686772382084} status=0 QTime=35
-2023-06-14 19:53:03.554 INFO  (qtp229995302-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1686772382084} status=0 QTime=0
-2023-06-14 19:53:03.636 INFO  (qtp229995302-47) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1686772383549} status=0 QTime=80
-2023-06-14 19:53:03.652 INFO  (qtp229995302-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1686772382084} status=0 QTime=98
-2023-06-14 19:53:05.536 INFO  (qtp229995302-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1686772382084} status=0 QTime=0
-2023-06-14 19:53:05.541 INFO  (qtp229995302-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1686772382084} status=0 QTime=5
-2023-06-14 19:53:05.584 INFO  (qtp229995302-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1686772382084} status=0 QTime=0
-2023-06-14 19:53:05.590 INFO  (qtp229995302-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1686772382084} status=0 QTime=1
-2023-06-14 19:53:05.598 INFO  (qtp229995302-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1686772382084} status=0 QTime=62
-2023-06-14 19:53:05.651 INFO  (qtp229995302-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1686772382084} status=0 QTime=49
-2023-06-14 20:09:35.007 INFO  (qtp229995302-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1686772382084} status=0 QTime=0
-2023-06-14 20:09:35.052 INFO  (qtp229995302-48) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1686772382084} status=0 QTime=41
-2023-06-14 20:09:35.091 INFO  (qtp229995302-47) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1686772382084} status=0 QTime=36
+2023-06-27 04:26:16.214 INFO  (main) [] o.e.j.s.Server jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 17.0.7+8-LTS-224
+2023-06-27 04:26:16.787 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2023-06-27 04:26:16.809 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-06-27 04:26:16.814 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.2.1
+2023-06-27 04:26:16.814 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-06-27 04:26:16.815 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1
+2023-06-27 04:26:16.815 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-06-27T04:26:16.815386Z
+2023-06-27 04:26:16.817 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\logs\jvm_crash_23780.log
+2023-06-27 04:26:16.821 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr (source: system property: solr.solr.home)
+2023-06-27 04:26:16.822 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\solr.xml
+2023-06-27 04:26:16.873 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/lib]
+2023-06-27 04:26:17.621 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2023-06-27 04:26:17.622 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-06-27 04:26:17.802 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr
+2023-06-27 04:26:17.802 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [expediente]
+2023-06-27 04:26:17.834 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
+2023-06-27 04:26:17.894 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.IndexSchema Schema name=default-config
+2023-06-27 04:26:18.101 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-06-27 04:26:18.102 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.CoreContainer Creating SolrCore 'expediente' using configuration from instancedir C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\expediente, trusted=true
+2023-06-27 04:26:18.135 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\expediente], dataDir=[C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\expediente\data\]
+2023-06-27 04:26:18.167 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2023-06-27 04:26:18.566 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2023-06-27 04:26:18.576 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-06-27 04:26:18.576 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-06-27 04:26:18.581 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@7544a1e4{solr-jetty-context.xml,/solr,file:///C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server/solr-webapp/webapp}
+2023-06-27 04:26:18.585 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-06-27 04:26:18.586 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-06-27 04:26:18.588 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\logs\2023_06_27.request.log
+2023-06-27 04:26:18.595 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@6ca0256d{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2023-06-27 04:26:18.596 INFO  (main) [] o.e.j.s.Server Started Server@4b85880b{STARTING}[10.0.13,sto=0] @3495ms
+2023-06-27 04:26:18.661 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\expediente\conf
+2023-06-27 04:26:18.676 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2023-06-27 04:26:18.683 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-06-27 04:26:18.686 INFO  (coreLoadExecutor-10-thread-1) [ x:expediente] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1769828493490651136
+2023-06-27 04:26:18.688 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-06-27 04:26:18.688 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-06-27 04:26:18.693 INFO  (searcherExecutor-12-thread-1-processing-expediente) [ x:expediente] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-06-27 04:26:21.071 INFO  (qtp883455411-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=42
+2023-06-27 04:32:44.999 INFO  (qtp883455411-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840364832} status=0 QTime=2
+2023-06-27 04:32:45.003 INFO  (qtp883455411-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687840364832} status=0 QTime=6
+2023-06-27 04:32:45.044 INFO  (qtp883455411-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840364832} status=0 QTime=47
+2023-06-27 04:32:54.205 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=mincetur&action=CREATE&config=solrconfig.xml&instanceDir=mincetur&wt=json&_=1687840364832
+2023-06-27 04:32:54.229 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.c.SolrResourceLoader Added 88 libs to classloader, from paths: [/C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/modules/clustering/lib, /C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/modules/extraction/lib, /C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/modules/langid/lib, /C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/modules/ltr/lib, /C:/Users/USER/Documents/CICLO%202023%20-%20I/PROYECTO%20FINAL%20TESIS/RemySearch/solr-9.2.1/modules/scripting/lib]
+2023-06-27 04:32:54.295 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
+2023-06-27 04:32:54.295 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2023-06-27 04:32:54.305 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.s.IndexSchema Schema name=example
+2023-06-27 04:32:54.361 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2023-06-27 04:32:54.362 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2023-06-27 04:32:54.362 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2023-06-27 04:32:54.362 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2023-06-27 04:32:54.365 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2023-06-27 04:32:54.384 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.c.CoreContainer Creating SolrCore 'mincetur' using configuration from instancedir C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur, trusted=true
+2023-06-27 04:32:54.384 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur], dataDir=[C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur\data\]
+2023-06-27 04:32:54.471 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2023-06-27 04:32:54.474 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-06-27 04:32:54.474 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-06-27 04:32:54.476 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-06-27 04:32:54.476 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-06-27 04:32:54.483 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur\conf
+2023-06-27 04:32:54.483 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur\conf
+2023-06-27 04:32:54.483 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2023-06-27 04:32:54.484 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur\conf
+2023-06-27 04:32:54.484 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2023-06-27 04:32:54.484 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2023-06-27 04:32:54.484 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
+2023-06-27 04:32:54.484 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=C:\Users\USER\Documents\CICLO 2023 - I\PROYECTO FINAL TESIS\RemySearch\solr-9.2.1\server\solr\mincetur\conf
+2023-06-27 04:32:54.484 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true, format=solr} for /schema/analysis/synonyms/english
+2023-06-27 04:32:54.485 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2023-06-27 04:32:54.486 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
+2023-06-27 04:32:54.486 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01, name=default, field=text, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2023-06-27 04:32:54.491 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2023-06-27 04:32:54.492 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.s.s.SolrSuggester init: {name=mySuggester, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, field=cat, weightField=price, suggestAnalyzerFieldType=string, buildOnStartup=false}
+2023-06-27 04:32:54.503 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, field=cat, weightField=price, suggestAnalyzerFieldType=string, buildOnStartup=false}
+2023-06-27 04:32:54.510 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-06-27 04:32:54.510 INFO  (qtp883455411-24) [ x:mincetur] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1769828908542197760
+2023-06-27 04:32:54.512 INFO  (qtp883455411-24) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=mincetur&action=CREATE&config=solrconfig.xml&instanceDir=mincetur&wt=json&_=1687840364832} status=0 QTime=309
+2023-06-27 04:32:54.533 INFO  (qtp883455411-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840364832} status=0 QTime=0
+2023-06-27 04:32:54.568 INFO  (searcherExecutor-18-thread-1-processing-mincetur) [ x:mincetur] o.a.s.c.S.Request webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=55
+2023-06-27 04:32:54.569 INFO  (searcherExecutor-18-thread-1-processing-mincetur) [ x:mincetur] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-06-27 04:32:54.569 INFO  (searcherExecutor-18-thread-1-processing-mincetur) [ x:mincetur] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-06-27 04:32:54.569 INFO  (searcherExecutor-18-thread-1-processing-mincetur) [ x:mincetur] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2023-06-27 04:32:54.570 INFO  (searcherExecutor-18-thread-1-processing-mincetur) [ x:mincetur] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-06-27 04:32:54.572 INFO  (qtp883455411-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687840364832} status=0 QTime=37
+2023-06-27 04:32:54.579 INFO  (qtp883455411-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840364832} status=0 QTime=46
+2023-06-27 04:37:16.760 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:37:16.766 INFO  (qtp883455411-56) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687840636626} status=0 QTime=3
+2023-06-27 04:37:16.799 INFO  (qtp883455411-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=39
+2023-06-27 04:37:39.139 INFO  (qtp883455411-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:37:39.179 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=40
+2023-06-27 04:37:39.211 INFO  (qtp883455411-56) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=29
+2023-06-27 04:38:31.550 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:38:31.554 INFO  (qtp883455411-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687840636626} status=0 QTime=4
+2023-06-27 04:38:31.572 INFO  (qtp883455411-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:38:31.575 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1687840636626} status=0 QTime=3
+2023-06-27 04:38:31.591 INFO  (qtp883455411-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=41
+2023-06-27 04:38:31.626 INFO  (qtp883455411-62) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=32
+2023-06-27 04:38:33.083 INFO  (qtp883455411-62) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:38:33.083 INFO  (qtp883455411-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1687840713080} status=0 QTime=0
+2023-06-27 04:38:33.116 INFO  (qtp883455411-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=33
+2023-06-27 04:38:35.335 INFO  (qtp883455411-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:38:35.343 INFO  (qtp883455411-20) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1687840715331} status=0 QTime=4
+2023-06-27 04:38:35.343 INFO  (qtp883455411-21) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1687840636626&ts=1687840636626} status=503 QTime=3
+2023-06-27 04:38:35.345 INFO  (qtp883455411-56) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1687840715331} status=0 QTime=5
+2023-06-27 04:38:35.428 INFO  (qtp883455411-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=93
+2023-06-27 04:38:35.431 INFO  (qtp883455411-49) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1687840715331} status=0 QTime=91
+2023-06-27 04:38:38.377 INFO  (qtp883455411-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:38:38.381 INFO  (qtp883455411-57) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1687840715331} status=0 QTime=4
+2023-06-27 04:38:38.414 INFO  (qtp883455411-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=37
+2023-06-27 04:38:49.965 INFO  (qtp883455411-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:38:49.971 INFO  (qtp883455411-23) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/file params={wt=json&_=1687840729959} status=0 QTime=5
+2023-06-27 04:38:49.979 INFO  (qtp883455411-28) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/file params={file=xslt&wt=json&_=1687840729959} status=0 QTime=2
+2023-06-27 04:38:50.010 INFO  (qtp883455411-57) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/file params={file=lang&wt=json&_=1687840729959} status=0 QTime=33
+2023-06-27 04:38:50.026 INFO  (qtp883455411-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=59
+2023-06-27 04:38:53.049 INFO  (qtp883455411-62) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:38:53.051 INFO  (qtp883455411-49) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1687840733045} status=0 QTime=2
+2023-06-27 04:38:53.083 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=34
+2023-06-27 04:38:55.878 INFO  (qtp883455411-57) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/config/params/_UPDATE_JSON_DOCS params={wt=json&_=1687840733045} status=0 QTime=0
+2023-06-27 04:38:55.885 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:38:55.885 INFO  (qtp883455411-22) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/config/params/_UPDATE_JSON_DOCS params={wt=json&_=1687840733045} status=0 QTime=0
+2023-06-27 04:38:55.885 INFO  (qtp883455411-56) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1687840733045} status=0 QTime=0
+2023-06-27 04:38:55.924 INFO  (qtp883455411-54) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=38
+2023-06-27 04:38:58.992 INFO  (qtp883455411-49) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={wt=json&_=1687840636626&ts=1687840636626} hits=0 status=0 QTime=2
+2023-06-27 04:38:58.992 INFO  (qtp883455411-49) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={wt=json&_=1687840636626&ts=1687840636626} status=0 QTime=2
+2023-06-27 04:39:00.011 INFO  (qtp883455411-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:39:00.032 INFO  (qtp883455411-62) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1687840740008} status=0 QTime=22
+2023-06-27 04:39:00.052 INFO  (qtp883455411-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=41
+2023-06-27 04:39:03.249 INFO  (qtp883455411-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:39:03.249 INFO  (qtp883455411-57) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1687840733045} status=0 QTime=0
+2023-06-27 04:39:03.289 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=39
+2023-06-27 04:39:30.891 INFO  (qtp883455411-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:39:30.892 INFO  (qtp883455411-27) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1687840715331} status=0 QTime=1
+2023-06-27 04:39:30.929 INFO  (qtp883455411-56) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=38
+2023-06-27 04:39:31.665 INFO  (qtp883455411-57) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1687840636626&ts=1687840636626} status=503 QTime=0
+2023-06-27 04:39:31.665 INFO  (qtp883455411-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:39:31.665 INFO  (qtp883455411-48) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1687840715331} status=0 QTime=0
+2023-06-27 04:39:31.666 INFO  (qtp883455411-62) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1687840715331} status=0 QTime=1
+2023-06-27 04:39:31.728 INFO  (qtp883455411-54) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=64
+2023-06-27 04:39:31.730 INFO  (qtp883455411-23) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1687840715331} status=0 QTime=66
+2023-06-27 04:39:55.783 INFO  (qtp883455411-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1687840636626} status=0 QTime=0
+2023-06-27 04:39:55.784 INFO  (qtp883455411-49) [ x:mincetur] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1687840715331} status=0 QTime=1
+2023-06-27 04:39:55.819 INFO  (qtp883455411-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1687840636626} status=0 QTime=36

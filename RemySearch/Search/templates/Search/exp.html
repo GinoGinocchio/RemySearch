@@ -9,17 +9,18 @@
     <div class="container-fluid" id="exp">
         <div class="d-flex" id = "centro"> 
             <div class="row " id = "form">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <form class="d-flex" method="post" action="{% url 'buscar' %}">
+                    {% csrf_token %}
+                    {{ form.palabra_clave }}
                     <button id="boton" type="submit">Buscar</button>
-                  </form>
+                </form>
             </div>
             <div class="row" id = "datos">
                 <div class= "fila" id="tablaheader">
                     <P>#Expediente</P>
                     <p>Archivo</p>
                 </div>
-                {% for p in objetos %}
+                {% for p in resultados %}
                 <div class= "fila">
                     <P>{{p.id}}</P>
                     <p><a href="{{p.archivo.url}}" target="_blank"><ion-icon name="receipt-outline" size="large"></ion-icon></a></p>
